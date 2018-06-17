@@ -36,6 +36,11 @@ Resources:
           Properties:
             Path: /
             Method: get
+        GetEventEpisode:
+          Type: Api
+          Properties:
+            Path: /episode
+            Method: get            
         PostEvent:
           Type: Api
           Properties:
