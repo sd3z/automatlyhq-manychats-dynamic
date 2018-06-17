@@ -16,7 +16,7 @@ app.get('/', function (req, res) {
 
 app.get('/episode/:episode', (req, res) => {
   base('Timbot').find(req.params.episode, function(err, record) {
-    if (err) { console.error(err); return; }
+    if (err) { console.error(err); res.send(err); }
     console.log(record);
     res.send(record);
 });
