@@ -9,14 +9,14 @@ const request = supertest(app);
 describe('Tests app', function() {
   it('verifies get', function(done) {
     request.get('/').expect(200).end(function(err, result) {
-        test.string(result.body.Output).contains('Hello');
+        test.string(result.body.text).contains('A quick simple text to be replaced. ');
         test.value(result).hasHeader('content-type', 'application/json; charset=utf-8');
         done(err);
     });
   });
   it('verifies post', function(done) {
     request.post('/').expect(200).end(function(err, result) {
-        test.string(result.body.Output).contains('Hello');
+        test.string(result.body.Output).contains('Not implemented');
         test.value(result).hasHeader('content-type', 'application/json; charset=utf-8');
         done(err);
     });

@@ -17,7 +17,7 @@ app.get('/', function(req, res) {
 
 app.post('/', function(req, res) {
   res.send({
-    "Output": "No implemented!"
+    "Output": "Not implemented!"
   });
 });
 
