@@ -34,12 +34,12 @@ Resources:
         GetEvent:
           Type: Api
           Properties:
-            Path: /
+            Path: /{proxy+}
             Method: get
         GetEventEpisode:
           Type: Api
           Properties:
-            Path: /episode
+            Path: /episode/{proxy+}
             Method: get            
         PostEvent:
           Type: Api
