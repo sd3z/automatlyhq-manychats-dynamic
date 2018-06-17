@@ -24,12 +24,7 @@ app.get('/episode/:epi', (req, res) => {
       console.log(record);
       res.send({
         "type": "text",
-        "text": record.Title,
-        "buttons": [{
-          "type": "url",
-          "caption": "External link",
-          "url": "https://manychat.com"
-        }]
+        "text": record.fields.Title
       });
     }
   });
