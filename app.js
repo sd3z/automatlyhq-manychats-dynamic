@@ -16,7 +16,7 @@ app.get('/', function (req, res) {
 
 app.get('/episode/:epi', (req, res) => {
   console.log("Looking for episode", req.params.epi);
-  base('Timbot').find(req.params.epi, function (err, record) {
+  base('Table 1').find(req.params.epi, function (err, record) {
     if (err) {
       console.error(err);
       res.send(err);
